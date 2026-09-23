@@ -583,14 +583,11 @@ def main():
     print("Permissions")
     print("-------------")
 
-    print("Printing:     ", "PERMITTED" if args.allow_print else "NOT PERMITTED")
-
-    print("Copying:    ", "PERMITTED" if args.allow_copy else "NOT PERMITTED")
-
-    print("Annotations: ", "PERMITTED" if args.allow_annotations else "NOT PERMITTED")
-
-    print("Modifications:    NOT PERMITTED")
-    print("Edit pages:       NOT PERMITTED")
+    print("Printing     : ", "PERMITTED" if args.allow_print else "NOT PERMITTED")
+    print("Copying      : ", "PERMITTED" if args.allow_copy else "NOT PERMITTED")
+    print("Annotations  : ", "PERMITTED" if args.allow_annotations else "NOT PERMITTED")
+    print("Modifications: NOT PERMITTED")
+    print("Edit pages   : NOT PERMITTED")
 
 
 if __name__ == "__main__":
