@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 #
 # sigpdf
 # Author: Joerg Schultze-Lutter, 2026
