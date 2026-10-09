@@ -424,7 +424,8 @@ def add_watermark(
         )
 
         page.merge_page(watermark)
-        writer.add_page(page)
+        writer_page = writer.add_page(page)
+        writer_page.compress_content_streams()
 
         print(
             f"\rProcessing page " f"{page_number} of {total_pages}...",
