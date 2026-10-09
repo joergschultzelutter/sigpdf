@@ -1,4 +1,3 @@
-#!/usr/local/bin/python
 #
 # sigpdf
 # Author: Joerg Schultze-Lutter, 2026
@@ -432,6 +431,8 @@ def add_watermark(
             end="",
             flush=True,
         )
+
+    writer.compress_identical_objects(remove_identicals=True, remove_duplicates=True)
 
     print()
 
