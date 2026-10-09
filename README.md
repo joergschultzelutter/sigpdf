@@ -32,3 +32,7 @@ options:
 ```
 python sigpdf.py --text "Hello World" .\input_file.pdf .\output_file.pdf
 ```
+
+## Note
+
+Will not work on those document sections that are part of a Docusign envelope. In order to apply the watermark to every page of a document, print that Docusign'ed pdf to another pdf (which will destroy the Docusign envelope, but we need to do that anyway)
